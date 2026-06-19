@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background: #0b0f17;
+  color: #e5e7eb;
+  line-height: 1.7;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at top, #111827, #0b0f17);
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+}
+.profile-img {
+  width: 160px;
+  height: 160px;
+
+  object-fit: cover;
+
+  /* ⭐ 圓角重點 */
+  border-radius: 18px;
+
+  /* 質感 */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+  margin-bottom: 20px;
+}
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #334155;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #93c5fd;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: #93c5fd;
+  margin-top: 8px;
+}
+
+.desc {
+  margin-top: 20px;
+  color: #cbd5e1;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.primary {
+  background: #3b82f6;
+  color: white;
+}
+
+.primary:hover {
+  transform: translateY(-2px);
+}
+
+.ghost {
+  border: 1px solid #334155;
+  color: #e5e7eb;
+}
+
+/* SECTIONS */
+.section {
+  padding: 90px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #93c5fd;
+}
+
+/* CARD */
+.card {
+  background: #111827;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #1f2937;
+}
+
+/* HOVER CARD */
+.hover {
+  transition: 0.3s;
+}
+
+.hover:hover {
+  transform: translateY(-6px);
+  border-color: #3b82f6;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* TIMELINE */
+.timeline {
+  border-left: 2px solid #334155;
+  padding-left: 20px;
+}
+
+.item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #3b82f6;
+  border-radius: 50%;
+  position: absolute;
+  left: -26px;
+  top: 6px;
+}
+
+.item h3 {
+  color: #e5e7eb;
+}
+
+.item p {
+  color: #94a3b8;
+}
+
+/* CONTACT */
+.contact .card p {
+  margin-bottom: 8px;
+  color: #cbd5e1;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #64748b;
+  border-top: 1px solid #1f2937;
+}
+
+/* ANIMATION */
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
